@@ -1,8 +1,8 @@
 def calculate_expression():
-    # Вычисляем значение выражения
-    value = 216 * 6 + 216 * 4 + 36 * 6 - 6 * 14 - 24
+    # Значение выражения
+    value = 216 ** 6 + 216 ** 4 + 36 ** 6 - 6 ** 14 - 24
 
-    # Переводим значение в систему счисления с основанием 6
+    # Перевод в систему счисления с основанием 6
     def to_base_6(n):
         digits = []
         while n:
@@ -11,7 +11,7 @@ def calculate_expression():
         return digits[::-1]
 
     base_6_digits = to_base_6(value)
-    # Подсчитываем количество различных цифр
+    # Количество различных цифр
     unique_digits = set(base_6_digits)
     return len(unique_digits)
 
